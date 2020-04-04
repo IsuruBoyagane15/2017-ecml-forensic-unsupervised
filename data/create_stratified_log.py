@@ -13,7 +13,7 @@ in_file_lines =  list(open(infile_name,"r"))
 
 # open outfiles
 outfiles = []
-for i in xrange(num_strata):
+for i in range(num_strata):
     out_file_name = infile_name.replace(".", "_%0.2d."%i)
     outfiles.append(open(out_file_name, "w"))
 
