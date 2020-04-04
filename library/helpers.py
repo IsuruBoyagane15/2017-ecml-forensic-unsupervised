@@ -62,7 +62,7 @@ def num_lines(file_name):
 
 # get a hex color range for number of parts
 def get_N_HexCol(N=5):
-    HSV_tuples = [(x*1.0/N, 1, 1) for x in xrange(N)]
+    HSV_tuples = [(x*1.0/N, 1, 1) for x in range(N)]
     hex_out = []
     for rgb in HSV_tuples:
         rgb = map(lambda x: int(x*255),colorsys.hsv_to_rgb(*rgb))
@@ -97,7 +97,7 @@ def multiprocess_file(file_name, process_one_line,  num_processes=8, max_size=10
 
     # define processes
     processes = []
-    for pid in xrange(num_processes):
+    for pid in range(num_processes):
         processes.append(Process(target=proccess_one_line_loop, args=(line_q,result_q,pid)))
 
     line_load_p = Process(target=load_line, args=(line_q,file_name))
