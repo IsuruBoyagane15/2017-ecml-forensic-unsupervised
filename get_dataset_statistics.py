@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
     signatures_used = set([])
 
-    for i in xrange(line_numers):
+    for i in range(line_numers):
         if i%500==0:
             print_progress(i, line_numers, " counting dataset statistics")
         pid = result_q.get()
