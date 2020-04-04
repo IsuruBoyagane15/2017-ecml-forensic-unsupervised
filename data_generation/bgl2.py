@@ -729,7 +729,7 @@ if __name__ == '__main__':
                 if line_id==0:
                     s = time.time()
                 if line_id==10000:
-                    print "Estimated duration: ~ %.2f h"%( (4747954 * (time.time() -s)/10000.0)/3600.0 )
+                    print("Estimated duration: ~ %.2f h"%( (4747954 * (time.time() -s)/10000.0)/3600.0 ))
                 for pattern_id, pattern in enumerate(KNOWN_LOGLINE_PATTERN):
                     current_op+=1
                     # print_progress(current_op, total_ops, " regex duplication checks finished")
