@@ -108,3 +108,5 @@ ENV/
 .mypy_cache/
 
 .idea/
+data/bgl2_00.log
+data/spirit2_00.log
